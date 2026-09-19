@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>S&B | Menu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="S&B Logo">
+        </div>
+
+        <ul style="text-align: center;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+       
+
+
+    </nav>
+
+    <!-- Menu Header -->
+
+    <section class="menu-header">
+
+        <h1>Our Delicious Menu</h1>
+
+        <p>Fresh • Crispy • Made With Love</p>
+
+    </section>
+
+    <!-- Search Bar -->
+
+<div class="menu-search">
+
+    <input type="text" id="searchInput" placeholder="🔍 Search your favorite food...">
+
+</div>
+
+<!-- Category Buttons -->
+
+<div class="category-buttons">
+
+    <button onclick="filterMenu('all')">All</button>
+
+    <button onclick="filterMenu('burger')">Burgers</button>
+
+    <button onclick="filterMenu('wings')">Wings</button>
+
+    <button onclick="filterMenu('nuggets')">Nuggets</button>
+
+</div>
+
+    <!-- Menu Items -->
+
+    <section class="menu-items">
+
+        <div class="menu-card" data-category="burger">
+
+            <img src="images/crispy-burger.png" alt="Crispy Burger">
+
+            <h3>Crispy Burger</h3>
+
+            <p>Rs. 590</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="menu-card" data-category="burger">
+
+            <img src="images/fillet-burger.jpg" alt="Fillet Burger">
+
+            <h3>Fillet Burger</h3>
+
+            <p>Rs. 690</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="menu-card" data-category="wings">
+
+            <img src="images/wings.png" alt="Hot Wings">
+
+            <h3>Juicy Hot Wings</h3>
+
+            <p>Rs. 650</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="menu-card" data-category="nuggets">
+
+            <img src="images/nuggets.jpg" alt="Nuggets">
+
+            <h3>Chicken Nuggets</h3>
+
+            <p>Rs. 420</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </section>
+    
+
+
+<!-- Cart Drawer -->
+
+<div class="cart-drawer" id="cartDrawer">
+
+  <section class="cart-section">
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total: Rs.
+            <span id="cartTotal">0</span>
+        </h3>
+
+        <button id="orderNowBtn">
+            🟢 Order Now
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+
+<script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
