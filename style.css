@@ -1367,7 +1367,7 @@ box-shadow:0 15px 35px rgba(0,0,0,.2);
 
 }
 
-```css
+
 /* =====================================
         CONTACT PAGE
 ===================================== */
@@ -1382,7 +1382,7 @@ box-shadow:0 15px 35px rgba(0,0,0,.2);
 
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/hero.jpg");
+    url("../hero.jpg");
 
     background-size:cover;
 
